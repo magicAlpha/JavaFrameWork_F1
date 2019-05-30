@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Gmail Login Test Suite" duration-ms="85514" started-at="2019-05-30T12:12:17Z" finished-at="2019-05-30T12:13:42Z">
+    <groups>
+    </groups>
+    <test name="Gmail Login Test" duration-ms="85514" started-at="2019-05-30T12:12:17Z" finished-at="2019-05-30T12:13:42Z">
+      <class name="com.java.framework.TestClasses.GmailLoginTestDemo">
+        <test-method status="PASS" signature="InitializeTestBaseSetup(java.lang.String)[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="InitializeTestBaseSetup" is-config="true" duration-ms="4730" started-at="2019-05-30T17:42:17Z" finished-at="2019-05-30T17:42:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeTestBaseSetup -->
+        <test-method status="PASS" signature="GmailLogin()[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="GmailLogin" duration-ms="40066" started-at="2019-05-30T17:42:22Z" finished-at="2019-05-30T17:43:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GmailLogin -->
+        <test-method status="PASS" signature="GmailLoginout()[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="GmailLoginout" duration-ms="40058" started-at="2019-05-30T17:43:02Z" depends-on-methods="com.java.framework.TestClasses.GmailLoginTestDemo.GmailLogin" finished-at="2019-05-30T17:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GmailLoginout -->
+        <test-method status="PASS" signature="TearDownApplication()[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="TearDownApplication" is-config="true" duration-ms="632" started-at="2019-05-30T17:43:42Z" finished-at="2019-05-30T17:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDownApplication -->
+      </class> <!-- com.java.framework.TestClasses.GmailLoginTestDemo -->
+    </test> <!-- Gmail Login Test -->
+  </suite> <!-- Gmail Login Test Suite -->
+</testng-results>
