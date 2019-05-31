@@ -3,7 +3,6 @@ package com.java.framework.ListenersClass;
 import java.io.File;
 import java.util.Date;
 
-
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ISuite;
@@ -19,17 +18,16 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.java.framework.TestClasses.ExtentReportDemo;
 
 public class ExtentReportListener implements ITestListener, ISuiteListener, IInvokedMethodListener {
 
 	
 	File file;
 	ExtentHtmlReporter e1;
-	ExtentReports e2;
+	ExtentReports e2;	
 	ExtentTest e3;
 
-	ExtentReportDemo exObj;
+	 ExtentReportDemo exObj;
 	
 	public void onStart(ISuite suite) {
 		exObj=new ExtentReportDemo();

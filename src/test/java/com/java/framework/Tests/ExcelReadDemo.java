@@ -1,4 +1,4 @@
-package com.java.framework.TestClasses;
+package com.java.framework.Tests;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,4 +1,4 @@
-package com.java.framework.TestClasses;
+package com.java.framework.Tests;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

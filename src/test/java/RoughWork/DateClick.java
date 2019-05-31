@@ -65,7 +65,7 @@ public class DateClick {
 			int n2=Integer.parseInt(selectDayToBeClick);
 			List<WebElement> dayNumber=driver.findElements(By.xpath("//div[@class='ui-datepicker-group ui-datepicker-group-last']//table//tbody//tr//td[@data-handler='selectDay']//a"));
 			int totalNumberOfDay=dayNumber.size();
-			
+			//driver.findElement(By.linkText(""+selectDayToBeClick+""));
 			for(int i=0;i<totalNumberOfDay;i++)
 			{
 				WebElement element=dayNumber.get(i);

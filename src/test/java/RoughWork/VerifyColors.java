@@ -60,8 +60,6 @@ public class VerifyColors {
 		{
 			System.out.println(finalRGBAvalue[i]);
 		}
-		
-		
 		System.out.println("====================Color=====================");
 	
 		finalRGBAvalue[0]=finalRGBAvalue[0].trim();		

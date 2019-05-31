@@ -1,4 +1,4 @@
-package com.java.framework.TestClasses;
+package com.java.framework.Tests;
 
 import org.testng.annotations.Test;
 

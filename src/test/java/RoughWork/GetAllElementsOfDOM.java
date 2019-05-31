@@ -30,9 +30,9 @@ public class GetAllElementsOfDOM {
 		String pageSource=driver.getPageSource();
 		System.out.println(pageSource);
 		
-		List<WebElement>listOfWebElement=driver.findElements(By.xpath("//*"));
+		List<WebElement> listOfWebElement=driver.findElements(By.xpath("//*"));
 		
-		List<WebElement>listOfByTagName=driver.findElements(By.tagName("input"));
+		List<WebElement> listOfByTagName=driver.findElements(By.tagName("input"));
 		/*
 		List<WebElement>listOfByTagNameA=driver.findElements(By.tagName("a"));
 		List<WebElement>listOfByTagNameDiv=driver.findElements(By.tagName("div"));
