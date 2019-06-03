@@ -40,20 +40,20 @@ public class DownLoadFileVerifiy {
 	EnvironmentPropertiesReader en = EnvironmentPropertiesReader.getInstance();
 	WebDriver driver;
 	WebDriverWait wait;
-	Logger log = Logger.getLogger("devpinoyLogger");
+	Logger log = Logger.getLogger("devpinoyLogger");;
 
 	String downloadedFilePath = "C:\\Users\\dheeraj.singh\\Downloads";
 	String url = en.getProperty("SpreadSheetURL");
 	String browserPath = System.getProperty("user.dir") + en.getProperty("ChromeDriverPath");
 	String downloadedFileName = en.getProperty("DownloadedFileName");
-	String extentReportPath = System.getProperty("user.dir") + "/ExtentReport/" + this.getClass().getSimpleName()
-			+ new Date().getTime() + ".html";
+	String extentReportPath = System.getProperty("user.dir") + "/ExtentReport/" + this.getClass().getSimpleName()+".html";
 
 	@BeforeSuite
 	public void InitializeExtentReport() {
 		try {
 			PropertyConfigurator.configure(
 					"C:\\Users\\dheeraj.singh\\eclipse-workspace\\JavaFrameWork\\src\\main\\java\\com\\java\\framework\\Config\\log4j.properties");
+	
 			file = new File(extentReportPath);
 			e1 = new ExtentHtmlReporter(file);
 			e2 = new ExtentReports();
@@ -87,21 +87,30 @@ public class DownLoadFileVerifiy {
 	public void GetReportResult(ITestResult result) {
 		try {
 			if (result.getStatus() == ITestResult.SUCCESS) {
+				e3.log(Status.INFO, result.getMethod().getMethodName() + " test started");
+				log.info(result.getMethod().getMethodName() + " test started");
 				e3.log(Status.PASS, MarkupHelper.createLabel(result.getMethod().getMethodName(), ExtentColor.GREEN));
+				log.info(result.getMethod().getMethodName() + " test completed");
 				e3.log(Status.PASS, result.getMethod().getMethodName() + " test passed");
+				log.info(result.getMethod().getMethodName() + " test passed");
 			}
 
 			if (result.getStatus() == ITestResult.FAILURE) {
+				log.info(result.getMethod().getMethodName() + " test started");
+				e3.log(Status.INFO, result.getMethod().getMethodName() + " test started");
 				e3.log(Status.FAIL, MarkupHelper.createLabel(result.getMethod().getMethodName(), ExtentColor.RED));
 				e3.log(Status.FAIL, result.getMethod().getMethodName() + " test failed");
+				log.info("test failed due to below reason");
 				e3.log(Status.FAIL, result.getThrowable().getCause());
-				e3.log(Status.FAIL, result.getThrowable().getMessage());
+				e3.log(Status.FAIL, result.getThrowable().getMessage());				
 			}
 
 			if (result.getStatus() == ITestResult.SKIP) {
+				e3.log(Status.INFO, result.getMethod().getMethodName() + " test started");
 				e3.log(Status.SKIP, MarkupHelper.createLabel(result.getMethod().getMethodName(), ExtentColor.YELLOW));
 				e3.log(Status.SKIP, result.getMethod().getMethodName() + " test skipped");
 				e3.log(Status.SKIP, result.getThrowable());
+				log.info("test has been skipped");
 			}
 
 			if (result.getStatus() == ITestResult.SUCCESS_PERCENTAGE_FAILURE) {
@@ -146,8 +155,7 @@ public class DownLoadFileVerifiy {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(200, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
-			String pageSource=driver.getPageSource();
-			System.out.println(pageSource);
+			
 			log.info("Clicked on animatedColors button");
 			animatedColorsBtn = driver.findElement(By.xpath("//a[text()='animatedcolors.xlsm']"));
 			wait = new WebDriverWait(driver, 200);

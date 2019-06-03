@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Gmail Login Test Suite" duration-ms="85514" started-at="2019-05-30T12:12:17Z" finished-at="2019-05-30T12:13:42Z">
+  <suite name="Default suite" duration-ms="9612" started-at="2019-06-03T06:33:00Z" finished-at="2019-06-03T06:33:09Z">
     <groups>
     </groups>
-    <test name="Gmail Login Test" duration-ms="85514" started-at="2019-05-30T12:12:17Z" finished-at="2019-05-30T12:13:42Z">
-      <class name="com.java.framework.TestClasses.GmailLoginTestDemo">
-        <test-method status="PASS" signature="InitializeTestBaseSetup(java.lang.String)[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="InitializeTestBaseSetup" is-config="true" duration-ms="4730" started-at="2019-05-30T17:42:17Z" finished-at="2019-05-30T17:42:22Z">
+    <test name="Default test" duration-ms="9612" started-at="2019-06-03T06:33:00Z" finished-at="2019-06-03T06:33:09Z">
+      <class name="com.java.framework.Tests.DownLoadFileVerifiy">
+        <test-method status="PASS" signature="InitializeExtentReport()[pri:0, instance:com.java.framework.Tests.DownLoadFileVerifiy@1a968a59]" name="InitializeExtentReport" is-config="true" duration-ms="152" started-at="2019-06-03T12:02:59Z" finished-at="2019-06-03T12:03:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeExtentReport -->
+        <test-method status="PASS" signature="CreateReport(java.lang.reflect.Method)[pri:0, instance:com.java.framework.Tests.DownLoadFileVerifiy@1a968a59]" name="CreateReport" is-config="true" duration-ms="3" started-at="2019-06-03T12:03:00Z" finished-at="2019-06-03T12:03:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[public void com.java.framework.Tests.DownLoadFileVerifiy.VerifyDownLoadFile()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InitializeTestBaseSetup -->
-        <test-method status="PASS" signature="GmailLogin()[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="GmailLogin" duration-ms="40066" started-at="2019-05-30T17:42:22Z" finished-at="2019-05-30T17:43:02Z">
+        </test-method> <!-- CreateReport -->
+        <test-method status="PASS" signature="VerifyDownLoadFile()[pri:0, instance:com.java.framework.Tests.DownLoadFileVerifiy@1a968a59]" name="VerifyDownLoadFile" duration-ms="9592" started-at="2019-06-03T12:03:00Z" finished-at="2019-06-03T12:03:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GmailLogin -->
-        <test-method status="PASS" signature="GmailLoginout()[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="GmailLoginout" duration-ms="40058" started-at="2019-05-30T17:43:02Z" depends-on-methods="com.java.framework.TestClasses.GmailLoginTestDemo.GmailLogin" finished-at="2019-05-30T17:43:42Z">
+        </test-method> <!-- VerifyDownLoadFile -->
+        <test-method status="PASS" signature="GetReportResult(org.testng.ITestResult)[pri:0, instance:com.java.framework.Tests.DownLoadFileVerifiy@1a968a59]" name="GetReportResult" is-config="true" duration-ms="9" started-at="2019-06-03T12:03:09Z" finished-at="2019-06-03T12:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyDownLoadFile status=SUCCESS method=DownLoadFileVerifiy.VerifyDownLoadFile()[pri:0, instance:com.java.framework.Tests.DownLoadFileVerifiy@1a968a59] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GmailLoginout -->
-        <test-method status="PASS" signature="TearDownApplication()[pri:0, instance:com.java.framework.TestClasses.GmailLoginTestDemo@1d057a39]" name="TearDownApplication" is-config="true" duration-ms="632" started-at="2019-05-30T17:43:42Z" finished-at="2019-05-30T17:43:42Z">
+        </test-method> <!-- GetReportResult -->
+        <test-method status="PASS" signature="FlushExtentReport()[pri:0, instance:com.java.framework.Tests.DownLoadFileVerifiy@1a968a59]" name="FlushExtentReport" is-config="true" duration-ms="340" started-at="2019-06-03T12:03:09Z" finished-at="2019-06-03T12:03:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDownApplication -->
-      </class> <!-- com.java.framework.TestClasses.GmailLoginTestDemo -->
-    </test> <!-- Gmail Login Test -->
-  </suite> <!-- Gmail Login Test Suite -->
+        </test-method> <!-- FlushExtentReport -->
+      </class> <!-- com.java.framework.Tests.DownLoadFileVerifiy -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

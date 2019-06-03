@@ -4,9 +4,6 @@ import org.testng.annotations.Test;
 
 public class ExtentReportDemo {
 
-	
-	
-	
 	@Test(priority=0)
 	public void Login()
 	{
